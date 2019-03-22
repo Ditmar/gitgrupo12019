@@ -9,9 +9,27 @@
     Math.js
     <form action="">
       <input type="text" id="txt_numbers">
-      <input type="text" id="txt_base"><a href="">process</a>
+      <input type="text" id="txt_base"><a href="javascript:base_functon()">process</a>
       <br>
-      <input type="text" id="txt_prim"> <a href="">Process</a>
+      <input type="text" id="txt_prim"> <a href="javascript:prime_functon()">Process</a>
     </form>
+    <script type="text/javascript" src="./js/math.js">
+    </script>
+    <script type="text/javascript">
+      function base_functon () {
+        var numbers = document.getElementById("txt_numbers").value;
+        var base = document.getElementById("txt_base").value;
+        alert(baseconvert(Number(numbers), base));
+      }
+      function prime_functon () {
+        var numbers = document.getElementById("txt_prim").value;
+        if (isPrime(Number(numbers))) {
+          alert("Es primo")
+        } else {
+          alert("No es primo");
+        }
+      }
+    </script>
+
   </body>
 </html>
