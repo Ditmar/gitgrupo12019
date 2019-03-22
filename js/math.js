@@ -1,0 +1,6 @@
+function baseconvert () {
+
+}
+function isPrime() {
+  
+}
