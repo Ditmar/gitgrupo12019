@@ -9,3 +9,19 @@ function isPrime(number) {
   }
   return true;
 }
+function  convert(grades) {
+  return (grades/180) * Math.PI
+}
+function solveSecondEquation(a, b, c) {
+  var discre = b * b - 4 * a * c;
+  if (discre == 0) {
+    return {x : -b / 2 * a};
+  } else if (discre < 0)  {
+    return {x : "Sol compleja"};
+  } else {
+    return {x1: (-b + Math.sqrt(discre))/(2 * a), x2: (-b - Math.sqrt(discre))/(2 * a)}
+  }
+}
+function otracosamas () {
+  
+}
