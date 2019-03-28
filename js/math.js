@@ -9,6 +9,20 @@ function isPrime(number) {
   }
   return true;
 }
+function round(number) {
+  return Math.round(number);
+}
+function tangente (a, b) {
+  return Math.atan2(a, b);
+}
+function arearound (r) {
+  return (r * r) Math.PI;
+}
+
+function pitagoras (a, b) {
+  return Math.sqrt(a * a + b * b);
+}
+
 function  convert(grades) {
   return (grades/180) * Math.PI
 }
@@ -23,5 +37,5 @@ function solveSecondEquation(a, b, c) {
   }
 }
 function otracosamas () {
-  
+
 }
